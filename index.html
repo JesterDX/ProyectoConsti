@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio José Emilio Lefebvre - Por una educación inclusiva</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="logo_colegio.jpg" alt="Logo Colegio José Emilio Lefebvre" class="logo">
+                <h1>Colegio José Emilio Lefebvre</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#problematica">Problemática</a></li>
+                    <li><a href="#iniciativas">Iniciativas</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Construyendo una comunidad escolar inclusiva</h2>
+                <p>En el Colegio José Emilio Lefebvre trabajamos para erradicar la discriminación y fomentar el respeto a la diversidad.</p>
+                <a href="#problematica" class="btn">Conoce más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="problematica-section" id="problematica">
+        <div class="container">
+            <h2>La Problemática</h2>
+            <div class="problematica-grid">
+                <div class="problematica-card">
+                    <i class="fas fa-users-slash"></i>
+                    <h3>Discriminación en el aula</h3>
+                    <p>Estudiantes de diferentes orígenes enfrentan actitudes discriminatorias que afectan su experiencia educativa.</p>
+                </div>
+                <div class="problematica-card">
+                    <i class="fas fa-heart-broken"></i>
+                    <h3>Baja autoestima</h3>
+                    <p>La exclusión constante impacta negativamente en la autoestima y rendimiento académico de los afectados.</p>
+                </div>
+                <div class="problematica-card">
+                    <i class="fas fa-school"></i>
+                    <h3>Clima escolar negativo</h3>
+                    <p>La convivencia escolar se ve deteriorada, afectando el proceso de enseñanza-aprendizaje.</p>
+                </div>
+            </div>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number" id="stat1">0</span>%
+                    <p>de estudiantes reportan haber sufrido discriminación</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="stat2">0</span>%
+                    <p>se sienten inseguros en el ambiente escolar</p>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="stat3">0</span>%
+                    <p>creen que se necesita más educación sobre diversidad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="iniciativas-section" id="iniciativas">
+        <div class="container">
+            <h2>Nuestras Iniciativas</h2>
+            <div class="iniciativas-tabs">
+                <button class="tab-btn active" data-tab="talleres">Talleres</button>
+                <button class="tab-btn" data-tab="grupos">Grupos de Apoyo</button>
+                <button class="tab-btn" data-tab="politicas">Políticas</button>
+            </div>
+            
+            <div class="tab-content active" id="talleres">
+                <div class="iniciativa-content">
+                    <div class="iniciativa-text">
+                        <h3>Talleres de Sensibilización</h3>
+                        <p>Realizamos talleres mensuales para estudiantes, docentes y padres sobre diversidad cultural, inclusión y respeto a las diferencias.</p>
+                        <ul>
+                            <li>Identificación de prejuicios</li>
+                            <li>Comunicación no violenta</li>
+                            <li>Celebración de la diversidad</li>
+                        </ul>
+                    </div>
+                    <div class="iniciativa-img">
+                        <img src="a.jpg" alt="Taller de inclusión">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="grupos">
+                <div class="iniciativa-content">
+                    <div class="iniciativa-text">
+                        <h3>Grupos de Apoyo Estudiantil</h3>
+                        <p>Hemos formado grupos de apoyo donde los estudiantes pueden compartir sus experiencias y recibir orientación.</p>
+                        <ul>
+                            <li>Espacios seguros para expresión</li>
+                            <li>Mentores entre compañeros</li>
+                            <li>Actividades de integración</li>
+                        </ul>
+                    </div>
+                    <div class="iniciativa-img">
+                        <img src="b.png" alt="Grupo de apoyo estudiantil">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="politicas">
+                <div class="iniciativa-content">
+                    <div class="iniciativa-text">
+                        <h3>Políticas Contra la Discriminación</h3>
+                        <p>Hemos implementado un protocolo claro para reportar y atender casos de discriminación en nuestra institución.</p>
+                        <ul>
+                            <li>Canales de denuncia anónima</li>
+                            <li>Procedimientos claros</li>
+                            <li>Sanciones educativas</li>
+                        </ul>
+                    </div>
+                    <div class="iniciativa-img">
+                        <img src="v.jpeg" alt="Políticas de inclusión">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonios-section" id="testimonios">
+        <div class="container">
+            <h2>Voces de Nuestra Comunidad</h2>
+            <div class="testimonios-slider">
+                <div class="testimonio active">
+                    <div class="testimonio-content">
+                        <p>"Antes me sentía solo en el colegio por ser diferente. Gracias a los talleres, mis compañeros ahora me comprenden mejor."</p>
+                        <div class="testimonio-author">
+                            <span class="author-name">Juan Pérez</span>
+                            <span class="author-grade">3er año</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonio">
+                    <div class="testimonio-content">
+                        <p>"Como docente, he visto un cambio positivo en cómo los estudiantes se tratan entre sí después de implementar estas iniciativas."</p>
+                        <div class="testimonio-author">
+                            <span class="author-name">Prof. Laura Mendoza</span>
+                            <span class="author-grade">Docente de Ciencias</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonio">
+                    <div class="testimonio-content">
+                        <p>"Me alegra que el colegio esté tomando medidas concretas para crear un ambiente más inclusivo para todos los niños."</p>
+                        <div class="testimonio-author">
+                            <span class="author-name">Sra. Rosa Torres</span>
+                            <span class="author-grade">Madre de familia</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="slider-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contacto-section" id="contacto">
+        <div class="container">
+            <h2>Únete a Nuestro Esfuerzo</h2>
+            <div class="contacto-content">
+                <div class="contacto-info">
+                    <h3>Contacto</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> RXHR+7C9, Moche</p>
+                    <p><i class="fas fa-phone"></i> (044) 389593/p>
+                    <p><i class="fas fa-envelope"></i> administracion@colegiolefebvre.edu.pe</p>
+                    
+                    <h3>Reporta un caso</h3>
+                    <p>Si has sido testigo o víctima de discriminación en nuestro colegio, repórtalo de manera anónima.</p>
+                    <a href="#" class="btn btn-reporte">Formulario de reporte</a>
+                </div>
+                <div class="contacto-form">
+                    <form id="formContacto">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <img src="logo-colegio-white.png" alt="Logo Colegio" class="footer-logo">
+                    <p>Colegio José Emilio Lefebvre<br>
+                    Moche - La Libertad<br>
+                    "Educando en la diversidad"</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#problematica">Problemática</a></li>
+                        <li><a href="#iniciativas">Iniciativas</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Síguenos</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Colegio José Emilio Lefebvre. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
