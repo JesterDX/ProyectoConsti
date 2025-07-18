@@ -105,7 +105,7 @@ formContacto.addEventListener('submit', function(e) {
 
     const nombre = document.getElementById('nombre').value;
     const mensaje = document.getElementById('mensaje').value;
-    const telefonoAdmin = "51987654321"; // Cambia al número real del admin
+    const telefonoAdmin = "51932408057"; // Cambia al número real del admin
 
     const texto = `Hola, soy ${nombre}. ${mensaje}\nMe gustaría unirme al grupo: https://chat.whatsapp.com/GYsFRHWJBqR2CCgB2m9tpK`;
     const url = `https://wa.me/${telefonoAdmin}?text=${encodeURIComponent(texto)}`;
