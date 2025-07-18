@@ -137,15 +137,7 @@ document.getElementById('btnUnirme').addEventListener('click', function(e) {
     e.preventDefault();
 
     const enlaceGrupo = "https://chat.whatsapp.com/GYsFRHWJBqR2CCgB2m9tpK";
-    const numeroAdmin = "51932408057"; // Cambia por el número del administrador
-    const mensaje = "¡Hola! Estoy interesado en unirme al grupo del colegio.";
 
-    // Paso 1: Abrir el enlace del grupo
+    // Solo abrir el enlace del grupo
     window.open(enlaceGrupo, '_blank');
-
-    // Paso 2: Abrir WhatsApp con mensaje al administrador
-    setTimeout(() => {
-        const urlWhatsApp = `https://wa.me/${numeroAdmin}?text=${encodeURIComponent(mensaje)}`;
-        window.open(urlWhatsApp, '_blank');
-    }, 2000); // Espera 2 segundos antes de abrir WhatsApp
 });
