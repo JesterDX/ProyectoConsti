@@ -100,14 +100,20 @@ document.addEventListener('DOMContentLoaded', function() {
         showTestimonio(currentTestimonio);
     }, 5000);
     
-    const formContacto = document.getElementById('formContacto');
-    
-    formContacto.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
-        formContacto.reset();
-    });
+formContacto.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const nombre = document.getElementById('nombre').value;
+    const mensaje = document.getElementById('mensaje').value;
+    const telefonoAdmin = "51987654321"; // Cambia al número real del admin
+
+    const texto = `Hola, soy ${nombre}. ${mensaje}\nMe gustaría unirme al grupo: https://chat.whatsapp.com/GYsFRHWJBqR2CCgB2m9tpK`;
+    const url = `https://wa.me/${telefonoAdmin}?text=${encodeURIComponent(texto)}`;
+
+    window.open(url, '_blank');
+    formContacto.reset();
+});
+
     
     const sections = document.querySelectorAll('section');
     
